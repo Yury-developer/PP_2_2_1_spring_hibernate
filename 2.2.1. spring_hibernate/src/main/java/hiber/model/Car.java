@@ -53,7 +53,6 @@ public class Car {
         this.series = series;
     }
 
-
     @Override
     public String toString() {
         return "{id=" + id +
@@ -62,7 +61,3 @@ public class Car {
                 '}';
     }
 }
-/*  Замечания ментора:
-"В классе Car удалить поле user, сделать одностороннюю связь." - Убрал всех User
-из Car класса и 2-й @one-to-one (оставил его только в User)
- */
