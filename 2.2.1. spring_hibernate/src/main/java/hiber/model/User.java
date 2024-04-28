@@ -21,7 +21,7 @@ public class User {
     private String email;
 
     @JoinColumn(name = "fk_car_id", referencedColumnName = "id_car") //  чтобы указать столбец в базе данных, который содержит внешний ключ к таблице Car.
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.PERSIST, orphanRemoval = true)
     private Car car;
 
 

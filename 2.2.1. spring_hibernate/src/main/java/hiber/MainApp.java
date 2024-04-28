@@ -29,8 +29,8 @@ public class MainApp {
                 new User("User3", "Lastname3", "user3@mail.ru", cars[2]),
                 new User("User4", "Lastname4", "user4@mail.ru", cars[3]),
                 new User("User5", "Lastname5", "user5@mail.ru", cars[4]),
-                new User("User3-1", "Lastname3", "user5@mail.ru", cars[2]),
-                new User("User3-2", "Lastname3", "user5@mail.ru", cars[2])
+                new User("User3-1", "Lastname3", "user3-1@mail.ru", cars[2]),
+                new User("User3-2", "Lastname3", "user3-2@mail.ru", cars[2])
         };
 
         Arrays.stream(users).forEach(userService::add);
