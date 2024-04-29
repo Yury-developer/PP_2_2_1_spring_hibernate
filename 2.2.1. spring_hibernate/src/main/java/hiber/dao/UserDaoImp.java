@@ -17,7 +17,6 @@ public class UserDaoImp implements UserDao {
 
     @Override
     public void add(User user) {
-        sessionFactory.getCurrentSession().save(user.getCar());
         sessionFactory.getCurrentSession().save(user);
     }
 
@@ -39,5 +38,4 @@ public class UserDaoImp implements UserDao {
         query.setParameter("series", series);
         return query.getResultList();
     }
-
 }
