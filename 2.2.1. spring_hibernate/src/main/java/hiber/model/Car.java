@@ -23,7 +23,7 @@ public class Car {
         // NOP
     }
 
-    public Car(String model, int series) { //
+    public Car(String model, int series) {
         this.model = model;
         this.series = series;
     }
@@ -55,9 +55,9 @@ public class Car {
 
     @Override
     public String toString() {
-        return "{id=" + id +
-                ", model='" + model + '\'' +
-                ", series=" + series +
+        return "{id:" + id +
+                ", model:'" + model + '\'' +
+                ", series:" + series +
                 '}';
     }
 }

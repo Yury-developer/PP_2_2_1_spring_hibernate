@@ -20,12 +20,13 @@ public class User {
     @Column(name = "email", length = 20)
     private String email;
 
-    @JoinColumn(name = "fk_car_id", referencedColumnName = "id_car") //  чтобы указать столбец в базе данных, который содержит внешний ключ к таблице Car.
+    @JoinColumn(name = "fk_car_id", referencedColumnName = "id_car")
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     private Car car;
 
 
     public User() {
+        // NOP
     }
 
     public User(String firstName, String lastName, String email, Car car) {
